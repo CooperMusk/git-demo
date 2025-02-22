@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -72,18 +73,133 @@
                     <view key="view" contentMode="scaleToFill" id="FeN-1h-qbK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-SP-z4E" userLabel="Container">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="rhm-xE-dow">
+                                        <rect key="frame" x="146.66666666666666" y="100" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="PZq-n9-srl"/>
+                                            <constraint firstAttribute="height" constant="100" id="rZ6-kI-EU0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BVL-YA-agx">
+                                        <rect key="frame" x="30" y="440.66666666666657" width="333" height="244.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBB-jW-bTN">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="UMP-U2-NWp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="手机号登录"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpL-J8-J32">
+                                                <rect key="frame" x="0.0" y="72" width="333" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="k7U-Kd-WeF"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="用户名和密码登录">
+                                                    <color key="titleColor" name="Primary"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="primaryClick:" destination="5xY-UX-btJ" eventType="touchUpInside" id="gln-A0-iWi"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="x2R-uH-yhQ">
+                                                <rect key="frame" x="0.0" y="144" width="333" height="56"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-RO-qiO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LoginWechatSelected"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhb-ef-FCs">
+                                                        <rect key="frame" x="83.333333333333343" y="0.0" width="83.333333333333343" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LoginQqSelected"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TV-gS-Zk0">
+                                                        <rect key="frame" x="166.66666666666666" y="0.0" width="83" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LoginWeiboSelected"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-mi-6d0">
+                                                        <rect key="frame" x="249.66666666666671" y="0.0" width="83.333333333333343" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LoginNeteaseSelected"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录即表示您同意《用户协议》和《隐私政策》" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-20-UNF">
+                                                <rect key="frame" x="0.0" y="230" width="333" height="14.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BVL-YA-agx" secondAttribute="trailing" constant="30" id="3Dk-ay-wTD"/>
+                                    <constraint firstItem="rhm-xE-dow" firstAttribute="centerX" secondItem="5MG-SP-z4E" secondAttribute="centerX" id="QTJ-4c-xeX"/>
+                                    <constraint firstAttribute="bottom" secondItem="BVL-YA-agx" secondAttribute="bottom" constant="30" id="pJC-ZK-njj"/>
+                                    <constraint firstItem="rhm-xE-dow" firstAttribute="top" secondItem="5MG-SP-z4E" secondAttribute="top" constant="100" id="qpq-Sz-bXg"/>
+                                    <constraint firstItem="BVL-YA-agx" firstAttribute="leading" secondItem="5MG-SP-z4E" secondAttribute="leading" constant="30" id="tOh-J3-LER"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K0Q-if-zf6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K0Q-if-zf6" firstAttribute="trailing" secondItem="5MG-SP-z4E" secondAttribute="trailing" id="H0v-BY-Og9"/>
+                            <constraint firstItem="5MG-SP-z4E" firstAttribute="top" secondItem="K0Q-if-zf6" secondAttribute="top" id="We4-Dy-Ygx"/>
+                            <constraint firstItem="5MG-SP-z4E" firstAttribute="leading" secondItem="K0Q-if-zf6" secondAttribute="leading" id="XUR-7L-lbq"/>
+                            <constraint firstItem="K0Q-if-zf6" firstAttribute="bottom" secondItem="5MG-SP-z4E" secondAttribute="bottom" id="aTn-gd-Thk"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kzi-ss-DVJ"/>
+                    <connections>
+                        <outlet property="primaryButton" destination="YpL-J8-J32" id="Luq-Up-RLC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QKY-t3-yIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="-4"/>
+            <point key="canvasLocation" x="1666.4122137404579" y="-4.2253521126760569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1XL-mu-f7m">
+            <objects>
+                <navigationController storyboardIdentifier="LoginHomeNav" automaticallyAdjustsScrollViewInsets="NO" id="5QE-mY-L0Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rWF-KL-OV3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5xY-UX-btJ" kind="relationship" relationship="rootViewController" id="SlG-eS-5tw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLM-sz-bxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739.69465648854964" y="-4.2253521126760569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LoginNeteaseSelected" width="42" height="42"/>
+        <image name="LoginQqSelected" width="42" height="42"/>
+        <image name="LoginWechatSelected" width="42" height="42"/>
+        <image name="LoginWeiboSelected" width="42" height="42"/>
+        <image name="Logo" width="48" height="48"/>
         <image name="SplashBanner" width="74.666664123535156" height="309"/>
         <image name="SplashLogo" width="188" height="31.666666030883789"/>
+        <namedColor name="Primary">
+            <color red="0.83921569585800171" green="0.15294116735458374" blue="0.10980391502380371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

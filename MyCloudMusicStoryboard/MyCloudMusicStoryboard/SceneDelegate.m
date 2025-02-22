@@ -21,7 +21,7 @@
 }
 
 - (void)toLoginHome{
-    [self setRootViewController:@"LoginHome"];
+    [self setRootViewController:@"LoginHomeNav"];
 }
 
 /// 设置根控制器
