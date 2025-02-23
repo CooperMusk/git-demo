@@ -19,6 +19,7 @@
 		045B71F02D681FFE001873F9 /* MyCloudMusicStoryboardUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B71EF2D681FFE001873F9 /* MyCloudMusicStoryboardUITestsLaunchTests.m */; };
 		045B71FF2D688F76001873F9 /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B71FE2D688F76001873F9 /* SplashController.m */; };
 		045B72022D689348001873F9 /* LoginHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B72012D689348001873F9 /* LoginHomeController.m */; };
+		045B72052D69E6A2001873F9 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B72042D69E6A1001873F9 /* LoginController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		045B71FE2D688F76001873F9 /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
 		045B72002D689348001873F9 /* LoginHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHomeController.h; sourceTree = "<group>"; };
 		045B72012D689348001873F9 /* LoginHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHomeController.m; sourceTree = "<group>"; };
+		045B72032D69E6A1001873F9 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		045B72042D69E6A1001873F9 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				045B71FE2D688F76001873F9 /* SplashController.m */,
 				045B72002D689348001873F9 /* LoginHomeController.h */,
 				045B72012D689348001873F9 /* LoginHomeController.m */,
+				045B72032D69E6A1001873F9 /* LoginController.h */,
+				045B72042D69E6A1001873F9 /* LoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045B72052D69E6A2001873F9 /* LoginController.m in Sources */,
 				045B71CF2D681FFC001873F9 /* ViewController.m in Sources */,
 				045B71C92D681FFC001873F9 /* AppDelegate.m in Sources */,
 				045B71FF2D688F76001873F9 /* SplashController.m in Sources */,

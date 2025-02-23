@@ -6,6 +6,7 @@
 //
 
 #import "LoginHomeController.h"
+#import "LoginController.h"
 
 @interface LoginHomeController ()
 
@@ -29,6 +30,11 @@
 /// 主按钮点击
 - (IBAction)primaryClick:(UIButton *)sender {
     NSLog(@"LoginHomeController primaryClick");
+    // 获取 Main.storyboard
+    UIStoryboard *storyboard = [UIStoryboard  storyboardWithName:@"Main" bundle:nil];
+    // 实例化一个控制器
+    UIViewController *target = [storyboard instantiateViewControllerWithIdentifier:@"Login"];
+    [self.navigationController pushViewController:target animated:YES];
 }
 
 
