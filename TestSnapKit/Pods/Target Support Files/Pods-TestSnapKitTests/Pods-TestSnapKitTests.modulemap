@@ -1,0 +1,6 @@
+framework module Pods_TestSnapKitTests {
+  umbrella header "Pods-TestSnapKitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

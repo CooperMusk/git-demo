@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TestSnapKit' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+	pod 'SnapKit'
+
+  # Pods for TestSnapKit
+
+  target 'TestSnapKitTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TestSnapKitUITests' do
+    # Pods for testing
+  end
+
+end
