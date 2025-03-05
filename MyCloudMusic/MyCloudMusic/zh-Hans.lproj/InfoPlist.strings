@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MyCloudMusic
+
+  Created by mac on 2025/3/4.
+  
+*/
+
+CFBundleName = "我的云音乐";
