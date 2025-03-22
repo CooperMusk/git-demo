@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0462031EA5009DD07720E68E /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43C495D7945EC2E1AF605BC /* Pods_MyCloudMusicTests.framework */; };
+		04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AECAA92D89B8F900B6C467 /* GuideController.swift */; };
 		04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF765A2D75874E0034D886 /* AppDelegate.swift */; };
 		04BF76642D75874F0034D886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF76632D75874F0034D886 /* Assets.xcassets */; };
 		04BF76672D75874F0034D886 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04BF76662D75874F0034D886 /* Base */; };
@@ -21,6 +22,30 @@
 		04C7243C2D7716C600641E9C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7243B2D7716C600641E9C /* R.generated.swift */; };
 		04C7243F2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7243E2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift */; };
 		04C724412D7800B500641E9C /* SuperUIThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724402D7800B500641E9C /* SuperUIThemeExtension.swift */; };
+		04C724442D780D4200641E9C /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724432D780D4200641E9C /* BaseController.swift */; };
+		04C724462D780E5200641E9C /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724452D780E5200641E9C /* BaseCommonController.swift */; };
+		04C724482D7810CC00641E9C /* BaseLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724472D7810CC00641E9C /* BaseLogicController.swift */; };
+		04C7244A2D78215F00641E9C /* BaseTitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724492D78215F00641E9C /* BaseTitleController.swift */; };
+		04C7244D2D7AF45A00641E9C /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C7244C2D7AF45A00641E9C /* Test.m */; };
+		04C7244F2D7AF81B00641E9C /* TermServiceDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7244E2D7AF81B00641E9C /* TermServiceDialogController.swift */; };
+		04C724522D7B068B00641E9C /* ViewFactoryUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724512D7B068B00641E9C /* ViewFactoryUtil.swift */; };
+		04C724542D7B079E00641E9C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C724532D7B079E00641E9C /* Constant.swift */; };
+		04E951622D8AA83800E5121F /* DefaultPreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951612D8AA83800E5121F /* DefaultPreferenceUtil.swift */; };
+		04E951662D8AACC400E5121F /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951652D8AACC400E5121F /* MainController.swift */; };
+		04E9516A2D8BF86000E5121F /* LoginHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951692D8BF86000E5121F /* LoginHomeController.swift */; };
+		04E951822D8C079900E5121F /* YJAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9516C2D8C079900E5121F /* YJAbstractDotView.m */; };
+		04E951832D8C079900E5121F /* YJAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9516E2D8C079900E5121F /* YJAnimatedDotView.m */; };
+		04E951842D8C079900E5121F /* YJHollowPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E951702D8C079900E5121F /* YJHollowPageControl.m */; };
+		04E951852D8C079900E5121F /* YJBannerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04E951732D8C079900E5121F /* YJBannerView.bundle */; };
+		04E951862D8C079900E5121F /* UIView+YJBannerViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E951762D8C079900E5121F /* UIView+YJBannerViewExt.m */; };
+		04E951872D8C079900E5121F /* YJBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E951792D8C079900E5121F /* YJBannerViewCell.m */; };
+		04E951882D8C079900E5121F /* YJBannerViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9517B2D8C079900E5121F /* YJBannerViewCollectionView.m */; };
+		04E951892D8C079900E5121F /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9517D2D8C079900E5121F /* YJBannerViewFooter.m */; };
+		04E9518A2D8C079900E5121F /* YJBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E951802D8C079900E5121F /* YJBannerView.m */; };
+		04E9518C2D8D487C00E5121F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9518B2D8D487C00E5121F /* Config.swift */; };
+		04E9518F2D8D515500E5121F /* DefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9518E2D8D515400E5121F /* DefaultService.swift */; };
+		04E951932D8D531800E5121F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951922D8D531800E5121F /* User.swift */; };
+		04E951952D8D5A9200E5121F /* ParamUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951942D8D5A9200E5121F /* ParamUtil.swift */; };
 		AC370D872959C32EAE1E6B40 /* Pods_MyCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C562542768C4938C980C76 /* Pods_MyCloudMusic.framework */; };
 		F042191EB0F7A59BBE582850 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9223340D0C17A7E8B233042 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04AECAA92D89B8F900B6C467 /* GuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideController.swift; sourceTree = "<group>"; };
 		04BF76572D75874E0034D886 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF765A2D75874E0034D886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BF76632D75874F0034D886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +89,39 @@
 		04C7243B2D7716C600641E9C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		04C7243E2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperUIColorExtensionswift.swift; sourceTree = "<group>"; };
 		04C724402D7800B500641E9C /* SuperUIThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperUIThemeExtension.swift; sourceTree = "<group>"; };
+		04C724432D780D4200641E9C /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		04C724452D780E5200641E9C /* BaseCommonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommonController.swift; sourceTree = "<group>"; };
+		04C724472D7810CC00641E9C /* BaseLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLogicController.swift; sourceTree = "<group>"; };
+		04C724492D78215F00641E9C /* BaseTitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTitleController.swift; sourceTree = "<group>"; };
+		04C7244B2D7AF45A00641E9C /* MyCloudMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCloudMusic-Bridging-Header.h"; sourceTree = "<group>"; };
+		04C7244C2D7AF45A00641E9C /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		04C7244E2D7AF81B00641E9C /* TermServiceDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermServiceDialogController.swift; sourceTree = "<group>"; };
+		04C724512D7B068B00641E9C /* ViewFactoryUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryUtil.swift; sourceTree = "<group>"; };
+		04C724532D7B079E00641E9C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		04E951612D8AA83800E5121F /* DefaultPreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPreferenceUtil.swift; sourceTree = "<group>"; };
+		04E951652D8AACC400E5121F /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		04E951692D8BF86000E5121F /* LoginHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeController.swift; sourceTree = "<group>"; };
+		04E9516B2D8C079900E5121F /* YJAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAbstractDotView.h; sourceTree = "<group>"; };
+		04E9516C2D8C079900E5121F /* YJAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAbstractDotView.m; sourceTree = "<group>"; };
+		04E9516D2D8C079900E5121F /* YJAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAnimatedDotView.h; sourceTree = "<group>"; };
+		04E9516E2D8C079900E5121F /* YJAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAnimatedDotView.m; sourceTree = "<group>"; };
+		04E9516F2D8C079900E5121F /* YJHollowPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHollowPageControl.h; sourceTree = "<group>"; };
+		04E951702D8C079900E5121F /* YJHollowPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHollowPageControl.m; sourceTree = "<group>"; };
+		04E951732D8C079900E5121F /* YJBannerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YJBannerView.bundle; sourceTree = "<group>"; };
+		04E951752D8C079900E5121F /* UIView+YJBannerViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJBannerViewExt.h"; sourceTree = "<group>"; };
+		04E951762D8C079900E5121F /* UIView+YJBannerViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJBannerViewExt.m"; sourceTree = "<group>"; };
+		04E951782D8C079900E5121F /* YJBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCell.h; sourceTree = "<group>"; };
+		04E951792D8C079900E5121F /* YJBannerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewCell.m; sourceTree = "<group>"; };
+		04E9517A2D8C079900E5121F /* YJBannerViewCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCollectionView.h; sourceTree = "<group>"; };
+		04E9517B2D8C079900E5121F /* YJBannerViewCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewCollectionView.m; sourceTree = "<group>"; };
+		04E9517C2D8C079900E5121F /* YJBannerViewFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewFooter.h; sourceTree = "<group>"; };
+		04E9517D2D8C079900E5121F /* YJBannerViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewFooter.m; sourceTree = "<group>"; };
+		04E9517F2D8C079900E5121F /* YJBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerView.h; sourceTree = "<group>"; };
+		04E951802D8C079900E5121F /* YJBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerView.m; sourceTree = "<group>"; };
+		04E9518B2D8D487C00E5121F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		04E9518E2D8D515400E5121F /* DefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultService.swift; sourceTree = "<group>"; };
+		04E951922D8D531800E5121F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04E951942D8D5A9200E5121F /* ParamUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamUtil.swift; sourceTree = "<group>"; };
 		19029BD0FD0A2AA23CEA4793 /* Pods-MyCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A3999A63623E379D8640146 /* Pods-MyCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		4467C4730941921EE8DA4EC3 /* Pods-MyCloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +161,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AECAA72D89B85300B6C467 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				04AECAA82D89B86A00B6C467 /* Controller */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		04AECAA82D89B86A00B6C467 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AECAA92D89B8F900B6C467 /* GuideController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04BF764E2D75874E0034D886 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +202,9 @@
 		04BF76592D75874E0034D886 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				04E9518D2D8D514100E5121F /* Service */,
+				04C724502D7B067600641E9C /* Util */,
+				04C724422D780CE100641E9C /* Controller */,
 				04C7243D2D77E85D00641E9C /* Config */,
 				04C7242C2D76CD9500641E9C /* Vender */,
 				04BF768A2D75891D0034D886 /* Component */,
@@ -137,6 +215,8 @@
 				04BF76682D75874F0034D886 /* Info.plist */,
 				04C724312D76D21200641E9C /* Localizable.strings */,
 				04C724362D76D7BC00641E9C /* InfoPlist.strings */,
+				04C7244C2D7AF45A00641E9C /* Test.m */,
+				04C7244B2D7AF45A00641E9C /* MyCloudMusic-Bridging-Header.h */,
 			);
 			path = MyCloudMusic;
 			sourceTree = "<group>";
@@ -161,6 +241,10 @@
 		04BF768A2D75891D0034D886 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				04E951902D8D52D800E5121F /* User */,
+				04E951672D8BF7D000E5121F /* Login */,
+				04E951632D8AAC8100E5121F /* Main */,
+				04AECAA72D89B85300B6C467 /* Guide */,
 				04BF768B2D7589510034D886 /* Splash */,
 			);
 			path = Component;
@@ -178,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				04BF768D2D7589C50034D886 /* SplashController.swift */,
+				04C7244E2D7AF81B00641E9C /* TermServiceDialogController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +270,7 @@
 		04C7242C2D76CD9500641E9C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				04E951812D8C079900E5121F /* YJBannerView */,
 				04C7242D2D76CDA200641E9C /* SuperSwift */,
 			);
 			path = Vender;
@@ -211,8 +297,151 @@
 			children = (
 				04C7243E2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift */,
 				04C724402D7800B500641E9C /* SuperUIThemeExtension.swift */,
+				04E9518B2D8D487C00E5121F /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		04C724422D780CE100641E9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04C724432D780D4200641E9C /* BaseController.swift */,
+				04C724452D780E5200641E9C /* BaseCommonController.swift */,
+				04C724472D7810CC00641E9C /* BaseLogicController.swift */,
+				04C724492D78215F00641E9C /* BaseTitleController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C724502D7B067600641E9C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				04C724512D7B068B00641E9C /* ViewFactoryUtil.swift */,
+				04C724532D7B079E00641E9C /* Constant.swift */,
+				04E951612D8AA83800E5121F /* DefaultPreferenceUtil.swift */,
+				04E951942D8D5A9200E5121F /* ParamUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		04E951632D8AAC8100E5121F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04E951642D8AAC9000E5121F /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04E951642D8AAC9000E5121F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E951652D8AACC400E5121F /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E951672D8BF7D000E5121F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04E951682D8BF7DB00E5121F /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04E951682D8BF7DB00E5121F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E951692D8BF86000E5121F /* LoginHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E951712D8C079900E5121F /* YJHollowPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				04E9516B2D8C079900E5121F /* YJAbstractDotView.h */,
+				04E9516C2D8C079900E5121F /* YJAbstractDotView.m */,
+				04E9516D2D8C079900E5121F /* YJAnimatedDotView.h */,
+				04E9516E2D8C079900E5121F /* YJAnimatedDotView.m */,
+				04E9516F2D8C079900E5121F /* YJHollowPageControl.h */,
+				04E951702D8C079900E5121F /* YJHollowPageControl.m */,
+			);
+			path = YJHollowPageControl;
+			sourceTree = "<group>";
+		};
+		04E951722D8C079900E5121F /* PageControls */ = {
+			isa = PBXGroup;
+			children = (
+				04E951712D8C079900E5121F /* YJHollowPageControl */,
+			);
+			path = PageControls;
+			sourceTree = "<group>";
+		};
+		04E951742D8C079900E5121F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04E951732D8C079900E5121F /* YJBannerView.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		04E951772D8C079900E5121F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04E951752D8C079900E5121F /* UIView+YJBannerViewExt.h */,
+				04E951762D8C079900E5121F /* UIView+YJBannerViewExt.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04E9517E2D8C079900E5121F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04E951782D8C079900E5121F /* YJBannerViewCell.h */,
+				04E951792D8C079900E5121F /* YJBannerViewCell.m */,
+				04E9517A2D8C079900E5121F /* YJBannerViewCollectionView.h */,
+				04E9517B2D8C079900E5121F /* YJBannerViewCollectionView.m */,
+				04E9517C2D8C079900E5121F /* YJBannerViewFooter.h */,
+				04E9517D2D8C079900E5121F /* YJBannerViewFooter.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04E951812D8C079900E5121F /* YJBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				04E951722D8C079900E5121F /* PageControls */,
+				04E951742D8C079900E5121F /* Resource */,
+				04E951772D8C079900E5121F /* Tools */,
+				04E9517E2D8C079900E5121F /* Views */,
+				04E9517F2D8C079900E5121F /* YJBannerView.h */,
+				04E951802D8C079900E5121F /* YJBannerView.m */,
+			);
+			path = YJBannerView;
+			sourceTree = "<group>";
+		};
+		04E9518D2D8D514100E5121F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04E9518E2D8D515400E5121F /* DefaultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04E951902D8D52D800E5121F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				04E951912D8D52E800E5121F /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		04E951912D8D52E800E5121F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E951922D8D531800E5121F /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2B7DE8B2A7B6AFB19E03A4DD /* Frameworks */ = {
@@ -312,6 +541,7 @@
 				TargetAttributes = {
 					04BF76562D75874E0034D886 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					04BF766C2D7587500034D886 = {
 						CreatedOnToolsVersion = 15.4;
@@ -353,6 +583,7 @@
 				04C724382D76D7BC00641E9C /* InfoPlist.strings in Resources */,
 				04C724332D76D21200641E9C /* Localizable.strings in Resources */,
 				04BF76672D75874F0034D886 /* Base in Resources */,
+				04E951852D8C079900E5121F /* YJBannerView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +732,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF768E2D7589C50034D886 /* SplashController.swift in Sources */,
+				04C7244D2D7AF45A00641E9C /* Test.m in Sources */,
+				04E9518C2D8D487C00E5121F /* Config.swift in Sources */,
+				04E951862D8C079900E5121F /* UIView+YJBannerViewExt.m in Sources */,
+				04E951892D8C079900E5121F /* YJBannerViewFooter.m in Sources */,
+				04C7244A2D78215F00641E9C /* BaseTitleController.swift in Sources */,
 				04C724412D7800B500641E9C /* SuperUIThemeExtension.swift in Sources */,
+				04E9516A2D8BF86000E5121F /* LoginHomeController.swift in Sources */,
+				04E951932D8D531800E5121F /* User.swift in Sources */,
+				04E951842D8C079900E5121F /* YJHollowPageControl.m in Sources */,
+				04C724522D7B068B00641E9C /* ViewFactoryUtil.swift in Sources */,
+				04E951952D8D5A9200E5121F /* ParamUtil.swift in Sources */,
+				04C724442D780D4200641E9C /* BaseController.swift in Sources */,
+				04C724482D7810CC00641E9C /* BaseLogicController.swift in Sources */,
+				04E951662D8AACC400E5121F /* MainController.swift in Sources */,
+				04E951822D8C079900E5121F /* YJAbstractDotView.m in Sources */,
+				04E951872D8C079900E5121F /* YJBannerViewCell.m in Sources */,
+				04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */,
+				04E9518A2D8C079900E5121F /* YJBannerView.m in Sources */,
+				04E951622D8AA83800E5121F /* DefaultPreferenceUtil.swift in Sources */,
+				04C724542D7B079E00641E9C /* Constant.swift in Sources */,
 				04C724302D76CE0000641E9C /* SuperDateUtil.swift in Sources */,
 				04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */,
+				04E9518F2D8D515500E5121F /* DefaultService.swift in Sources */,
+				04E951882D8C079900E5121F /* YJBannerViewCollectionView.m in Sources */,
+				04C724462D780E5200641E9C /* BaseCommonController.swift in Sources */,
 				04C7243C2D7716C600641E9C /* R.generated.swift in Sources */,
 				04C7243F2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift in Sources */,
+				04E951832D8C079900E5121F /* YJAnimatedDotView.m in Sources */,
+				04C7244F2D7AF81B00641E9C /* TermServiceDialogController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +954,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J3DMN6G49G;
@@ -718,6 +974,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.musk.MyCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudMusic/MyCloudMusic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -729,6 +987,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J3DMN6G49G;
@@ -748,6 +1007,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.musk.MyCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudMusic/MyCloudMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -8,18 +8,21 @@
 import UIKit
 import TangramKit
 
-class SplashController: UIViewController {
+class SplashController: BaseLogicController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .colorBackground
-        let container = TGRelativeLayout()
-        // 四边和安全区对齐
-        container.tg_top.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_bottom.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_leading.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_trailing.equal(TGLayoutPos.tg_safeAreaMargin)
-        view.addSubview(container)
+//        let container = TGRelativeLayout()
+//        // 四边和安全区对齐
+//        container.tg_top.equal(TGLayoutPos.tg_safeAreaMargin)
+//        container.tg_bottom.equal(TGLayoutPos.tg_safeAreaMargin)
+//        container.tg_leading.equal(TGLayoutPos.tg_safeAreaMargin)
+//        container.tg_trailing.equal(TGLayoutPos.tg_safeAreaMargin)
+//        view.addSubview(container)
+        
+        // 容器初始化
+        self.initRelativeLayoutSafeArea()
+        
         // banner
         let bannerView = UIImageView()
         bannerView.tg_width.equal(75)
@@ -29,6 +32,7 @@ class SplashController: UIViewController {
         // bannerView.image = UIImage(named: "SplashBanner")
         bannerView.image = R.image.splashBanner()
         container.addSubview(bannerView)
+        
         // 版权
         let copyrightView = UILabel()
         copyrightView.tg_width.equal(.wrap)
@@ -41,6 +45,7 @@ class SplashController: UIViewController {
         // copyrightView.text = R.string.localizable.clickReload("network bad")
         copyrightView.text = String(format: "Copyright @ %d Musk. All Right Reserved", year)
         container.addSubview(copyrightView)
+        
         // logo
         // let logoView = UIImageView(image: UIImage(named: "SplashLogo"))
         let logoView = UIImageView(image: R.image.splashLogo())
@@ -52,6 +57,43 @@ class SplashController: UIViewController {
         container.addSubview(logoView)
     }
     
+    override func initDatum() {
+        super.initDatum()
+//        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
+//            // 已经同意了用户协议
+//            prepareNext()
+//        } else {
+//            showTermsServiceAgreementDialog()
+//        }
+        // test
+        showTermsServiceAgreementDialog()
+    }
+    
+    func prepareNext() {
+        next()
+    }
+    
+    func next() {
+        AppDelegate.shared.toMain()
+    }
+    
+    /// 显示服务条款对话框
+    func showTermsServiceAgreementDialog() {
+        dialogController.show()
+    }
+    
+    @objc func primaryClick() {
+        dialogController.hide()
+        DefaultPreferenceUtil.setAcceptTermsServiceAgreement(true)
+        AppDelegate.shared.toGuide()
+    }
+    
+    lazy var dialogController: TermServiceDialogController = {
+        let result = TermServiceDialogController()
+        result.titleView.text = R.string.localizable.termServicePrivacy()
+        result.primaryButton.addTarget(self, action: #selector(primaryClick), for: .touchUpInside)
+        return result
+    }()
 
 
 }

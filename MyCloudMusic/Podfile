@@ -8,6 +8,9 @@ target 'MyCloudMusic' do
 	pod 'TangramKit'
 	pod 'R.swift'
 	pod 'DynamicColor'
+	pod 'QMUIKit'
+	# swift 网络请求
+	pod 'Moya'
 
   # Pods for MyCloudMusic
 
