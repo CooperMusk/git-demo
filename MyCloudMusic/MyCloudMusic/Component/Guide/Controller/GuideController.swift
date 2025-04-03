@@ -8,6 +8,8 @@
 import UIKit
 import TangramKit
 import Moya
+import RxSwift
+import NSObject_Rx
 
 class GuideController: BaseLogicController {
     var bannerView: YJBannerView!
@@ -74,7 +76,120 @@ class GuideController: BaseLogicController {
 //        AppDelegate.shared.toMain()
         
         // test
+        moyaByDefaultRepository()
+    }
+    
+    func moyaByDefaultRepository() {
+        DefaultRepository.shared.sheets(size: 10)
+            .subscribeSuccess { result in
+                print(result)
+                print(result.data.data?[0].title)
+            }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwiftOfSubscribeSuccess(){
         let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheetDetail(data: "1234234234324"))
+            .asObservable()
+            .mapString()
+            .mapObject(DetailResponse<Sheet>.self)
+            .subscribeSuccess { result in
+                print(result.data!.title!)
+            }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwiftOfGeneric1() {
+        let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheetDetail(data: "1"))
+            .asObservable()
+            .mapString()
+            .mapObject(DetailResponse<Sheet>.self)
+            .subscribe { event in
+            switch event {
+            case .next(let result):
+                print(result.data!.title!)
+            case .error(let error):
+                print("error \(error)")
+            case .completed:
+                print("Completed")
+            }
+        }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwiftOfGeneric() {
+        let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheets(size: 10))
+            .asObservable()
+            .mapString()
+            .mapObject(ListResponse<Sheet>.self)
+            .subscribe { event in
+            switch event {
+            case .next(let result):
+                print(result.data.data?[0].title)
+            case .error(let error):
+                print("error \(error)")
+            case .completed:
+                print("Completed")
+            }
+        }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwiftOfObservable() {
+        let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheets(size: 10))
+            .asObservable()
+            .mapString()
+            .mapObject(SheetListResponse.self)
+            .subscribe { event in
+            switch event {
+            case .next(let result):
+                print(result.data.data[0].title!)
+            case .error(let error):
+                print("error \(error)")
+            case .completed:
+                print("Completed")
+            }
+        }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwiftOfJSON() {
+        let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheets(size: 10))
+            .subscribe { event in
+                switch event {
+                case let .success(response):
+                    let data = response.data
+                    let statusCode = response.statusCode
+                    let dataString = String(data: data, encoding: .utf8)!
+                    if let result = SheetListResponse.deserialize(from: dataString) {
+                        print(result.status)
+                        print(result.data.data[0].title!)
+                    }
+                case let .failure(error):
+                    print("request network error \(error)")
+                }
+            }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByRxSwift() {
+        let provider = MoyaProvider<DefaultService>()
+        provider.rx.request(.sheets(size: 10))
+            .subscribe { event in
+                switch event {
+                case let .success(response):
+                    let data = response.data
+                    let statusCode = response.statusCode
+                    let dataString = String(data: data, encoding: .utf8)!
+                    print("request network success \(statusCode) \(dataString)")
+                case let .failure(error):
+                    print("request network error \(error)")
+                }
+            }.disposed(by: rx.disposeBag) // 释放相关的资源
+    }
+    
+    func moyaByOrigin() {
+        let provider = MoyaProvider<DefaultService>()
+        // result 回调处理，result 是一个枚举类型：请求成功，返回一个 Response 对象；请求失败，返回一个错误对象。
         provider.request(.sheets(size: 10)) { result in
             print(result)
             switch result {
@@ -85,7 +200,6 @@ class GuideController: BaseLogicController {
                 print("request network success \(statusCode) \(dataString)")
             case let .failure(error):
                 print("request network error \(error)")
-                
             }
         }
     }

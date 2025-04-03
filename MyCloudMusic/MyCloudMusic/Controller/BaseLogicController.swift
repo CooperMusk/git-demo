@@ -19,6 +19,8 @@ class BaseLogicController: BaseCommonController {
     /// footer 容器
     var superFooterContainer: TGBaseLayout!
     var superFooterContentContainer: TGBaseLayout!
+    /// frame 容器，一般用来添加占位布局
+    var frameContainer: TGBaseLayout!
     
     
     /// 初始化 RelativeLayout 容器，四边都在安全区内
@@ -97,6 +99,36 @@ class BaseLogicController: BaseCommonController {
         
         superFooterContainer.addSubview(superFooterContentContainer)
         rootContainer.addSubview(superFooterContainer)
+    }
+    
+    /// 占位控件
+    lazy var placeholderView: PlaceholderView = {
+        let r = PlaceholderView()
+        r.hide()
+
+        frameContainer.addSubview(r)
+        
+        //添加点击事件
+        let g=UITapGestureRecognizer(target: self, action: #selector(placeholderViewClick(_:)))
+
+        //设置成false表示当前控件响应后会传播到其他控件上
+        //如果不设置为false，界面里面的列表控件可能无法响应点击事件
+        g.cancelsTouchesInView = false
+
+        r.addGestureRecognizer(g)
+
+        return r
+    }()
+    
+    /// 占位控件点击
+    @objc func placeholderViewClick(_ recognizer:UITapGestureRecognizer) {
+        loadData(true)
+    }
+    
+    /// 加载数据方法
+    /// - Parameter isPlaceholder: 是否是通过placeholder控件触发的
+    func loadData(_ isPlaceholder:Bool=false) {
+        
     }
     
     override func initViews() {

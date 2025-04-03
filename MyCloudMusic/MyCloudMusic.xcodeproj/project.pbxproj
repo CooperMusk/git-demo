@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0462031EA5009DD07720E68E /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43C495D7945EC2E1AF605BC /* Pods_MyCloudMusicTests.framework */; };
+		046EC7CF2D9E7EDE00AB7943 /* DefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EC7CE2D9E7EDE00AB7943 /* DefaultRepository.swift */; };
 		04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AECAA92D89B8F900B6C467 /* GuideController.swift */; };
 		04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF765A2D75874E0034D886 /* AppDelegate.swift */; };
 		04BF76642D75874F0034D886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF76632D75874F0034D886 /* Assets.xcassets */; };
@@ -46,6 +47,24 @@
 		04E9518F2D8D515500E5121F /* DefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9518E2D8D515400E5121F /* DefaultService.swift */; };
 		04E951932D8D531800E5121F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951922D8D531800E5121F /* User.swift */; };
 		04E951952D8D5A9200E5121F /* ParamUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951942D8D5A9200E5121F /* ParamUtil.swift */; };
+		04E951982D8EDE1A00E5121F /* SheetListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951972D8EDE1A00E5121F /* SheetListResponse.swift */; };
+		04E9519A2D915FB700E5121F /* PageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951992D915FB700E5121F /* PageResponse.swift */; };
+		04E9519E2D91613600E5121F /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9519D2D91613600E5121F /* Sheet.swift */; };
+		04E951A12D916BB400E5121F /* ObservableMoyaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951A02D916BB300E5121F /* ObservableMoyaExtension.swift */; };
+		04E951A32D91785C00E5121F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951A22D91785C00E5121F /* BaseModel.swift */; };
+		04E951A52D91791C00E5121F /* BaseId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951A42D91791C00E5121F /* BaseId.swift */; };
+		04E951A72D91797700E5121F /* BaseCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951A62D91797700E5121F /* BaseCommon.swift */; };
+		04E951AA2D928D2D00E5121F /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951A92D928D2D00E5121F /* ListResponse.swift */; };
+		04E951AD2D928E6200E5121F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951AC2D928E6200E5121F /* BaseResponse.swift */; };
+		04E951AF2D928F1700E5121F /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951AE2D928F1700E5121F /* DetailResponse.swift */; };
+		04E951B12D92920900E5121F /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951B02D92920900E5121F /* Meta.swift */; };
+		04E951B52D929CE900E5121F /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951B42D929CE900E5121F /* Ad.swift */; };
+		04E951B92D92A14D00E5121F /* SuperToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951B82D92A14D00E5121F /* SuperToast.swift */; };
+		04E951BB2D93CF2B00E5121F /* ExceptionHandleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951BA2D93CF2B00E5121F /* ExceptionHandleUtil.swift */; };
+		04E951BE2D93D24900E5121F /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951BD2D93D24900E5121F /* PlaceholderView.swift */; };
+		04E951C02D93D2AD00E5121F /* BaseRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951BF2D93D2AD00E5121F /* BaseRelativeLayout.swift */; };
+		04E951C22D93D2F700E5121F /* TipUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951C12D93D2F700E5121F /* TipUtil.swift */; };
+		04E951C62D93DD5F00E5121F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E951C52D93DD5F00E5121F /* ViewExtension.swift */; };
 		AC370D872959C32EAE1E6B40 /* Pods_MyCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C562542768C4938C980C76 /* Pods_MyCloudMusic.framework */; };
 		F042191EB0F7A59BBE582850 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9223340D0C17A7E8B233042 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046EC7CE2D9E7EDE00AB7943 /* DefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepository.swift; sourceTree = "<group>"; };
 		04AECAA92D89B8F900B6C467 /* GuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideController.swift; sourceTree = "<group>"; };
 		04BF76572D75874E0034D886 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF765A2D75874E0034D886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +142,24 @@
 		04E9518E2D8D515400E5121F /* DefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultService.swift; sourceTree = "<group>"; };
 		04E951922D8D531800E5121F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04E951942D8D5A9200E5121F /* ParamUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamUtil.swift; sourceTree = "<group>"; };
+		04E951972D8EDE1A00E5121F /* SheetListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListResponse.swift; sourceTree = "<group>"; };
+		04E951992D915FB700E5121F /* PageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageResponse.swift; sourceTree = "<group>"; };
+		04E9519D2D91613600E5121F /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		04E951A02D916BB300E5121F /* ObservableMoyaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMoyaExtension.swift; sourceTree = "<group>"; };
+		04E951A22D91785C00E5121F /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		04E951A42D91791C00E5121F /* BaseId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseId.swift; sourceTree = "<group>"; };
+		04E951A62D91797700E5121F /* BaseCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommon.swift; sourceTree = "<group>"; };
+		04E951A92D928D2D00E5121F /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		04E951AC2D928E6200E5121F /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		04E951AE2D928F1700E5121F /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
+		04E951B02D92920900E5121F /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		04E951B42D929CE900E5121F /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		04E951B82D92A14D00E5121F /* SuperToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToast.swift; sourceTree = "<group>"; };
+		04E951BA2D93CF2B00E5121F /* ExceptionHandleUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandleUtil.swift; sourceTree = "<group>"; };
+		04E951BD2D93D24900E5121F /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		04E951BF2D93D2AD00E5121F /* BaseRelativeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRelativeLayout.swift; sourceTree = "<group>"; };
+		04E951C12D93D2F700E5121F /* TipUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipUtil.swift; sourceTree = "<group>"; };
+		04E951C52D93DD5F00E5121F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		19029BD0FD0A2AA23CEA4793 /* Pods-MyCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A3999A63623E379D8640146 /* Pods-MyCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		4467C4730941921EE8DA4EC3 /* Pods-MyCloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +199,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046EC7CD2D9E7EBF00AB7943 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				046EC7CE2D9E7EDE00AB7943 /* DefaultRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		04AECAA72D89B85300B6C467 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +248,10 @@
 		04BF76592D75874E0034D886 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				046EC7CD2D9E7EBF00AB7943 /* Repository */,
+				04E951BC2D93D22F00E5121F /* View */,
+				04E9519F2D916B5E00E5121F /* Extension */,
+				04E951962D8EDDF800E5121F /* Model */,
 				04E9518D2D8D514100E5121F /* Service */,
 				04C724502D7B067600641E9C /* Util */,
 				04C724422D780CE100641E9C /* Controller */,
@@ -241,6 +291,8 @@
 		04BF768A2D75891D0034D886 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				04E951B22D929CA200E5121F /* Ad */,
+				04E9519B2D91610900E5121F /* Sheet */,
 				04E951902D8D52D800E5121F /* User */,
 				04E951672D8BF7D000E5121F /* Login */,
 				04E951632D8AAC8100E5121F /* Main */,
@@ -270,6 +322,7 @@
 		04C7242C2D76CD9500641E9C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				04E951B62D92A0F700E5121F /* SuperUI */,
 				04E951812D8C079900E5121F /* YJBannerView */,
 				04C7242D2D76CDA200641E9C /* SuperSwift */,
 			);
@@ -320,6 +373,8 @@
 				04C724532D7B079E00641E9C /* Constant.swift */,
 				04E951612D8AA83800E5121F /* DefaultPreferenceUtil.swift */,
 				04E951942D8D5A9200E5121F /* ParamUtil.swift */,
+				04E951BA2D93CF2B00E5121F /* ExceptionHandleUtil.swift */,
+				04E951C12D93D2F700E5121F /* TipUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -442,6 +497,104 @@
 				04E951922D8D531800E5121F /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04E951962D8EDDF800E5121F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E951A82D928D0100E5121F /* Response */,
+				04E951972D8EDE1A00E5121F /* SheetListResponse.swift */,
+				04E951992D915FB700E5121F /* PageResponse.swift */,
+				04E951A22D91785C00E5121F /* BaseModel.swift */,
+				04E951A42D91791C00E5121F /* BaseId.swift */,
+				04E951A62D91797700E5121F /* BaseCommon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E9519B2D91610900E5121F /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				04E9519C2D91611000E5121F /* Model */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		04E9519C2D91611000E5121F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E9519D2D91613600E5121F /* Sheet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E9519F2D916B5E00E5121F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04E951A02D916BB300E5121F /* ObservableMoyaExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04E951A82D928D0100E5121F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				04E951A92D928D2D00E5121F /* ListResponse.swift */,
+				04E951AC2D928E6200E5121F /* BaseResponse.swift */,
+				04E951AE2D928F1700E5121F /* DetailResponse.swift */,
+				04E951B02D92920900E5121F /* Meta.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		04E951B22D929CA200E5121F /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				04E951B32D929CAF00E5121F /* Model */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		04E951B32D929CAF00E5121F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E951B42D929CE900E5121F /* Ad.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E951B62D92A0F700E5121F /* SuperUI */ = {
+			isa = PBXGroup;
+			children = (
+				04E951C42D93DD4F00E5121F /* View */,
+				04E951B72D92A12600E5121F /* Toast */,
+			);
+			path = SuperUI;
+			sourceTree = "<group>";
+		};
+		04E951B72D92A12600E5121F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				04E951B82D92A14D00E5121F /* SuperToast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		04E951BC2D93D22F00E5121F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E951BD2D93D24900E5121F /* PlaceholderView.swift */,
+				04E951BF2D93D2AD00E5121F /* BaseRelativeLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E951C42D93DD4F00E5121F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E951C52D93DD5F00E5121F /* ViewExtension.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2B7DE8B2A7B6AFB19E03A4DD /* Frameworks */ = {
@@ -731,30 +884,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E951B12D92920900E5121F /* Meta.swift in Sources */,
+				04E951AA2D928D2D00E5121F /* ListResponse.swift in Sources */,
+				04E951C02D93D2AD00E5121F /* BaseRelativeLayout.swift in Sources */,
+				04E951B52D929CE900E5121F /* Ad.swift in Sources */,
 				04BF768E2D7589C50034D886 /* SplashController.swift in Sources */,
 				04C7244D2D7AF45A00641E9C /* Test.m in Sources */,
+				04E951C62D93DD5F00E5121F /* ViewExtension.swift in Sources */,
 				04E9518C2D8D487C00E5121F /* Config.swift in Sources */,
 				04E951862D8C079900E5121F /* UIView+YJBannerViewExt.m in Sources */,
+				046EC7CF2D9E7EDE00AB7943 /* DefaultRepository.swift in Sources */,
 				04E951892D8C079900E5121F /* YJBannerViewFooter.m in Sources */,
+				04E951BE2D93D24900E5121F /* PlaceholderView.swift in Sources */,
 				04C7244A2D78215F00641E9C /* BaseTitleController.swift in Sources */,
+				04E9519E2D91613600E5121F /* Sheet.swift in Sources */,
 				04C724412D7800B500641E9C /* SuperUIThemeExtension.swift in Sources */,
 				04E9516A2D8BF86000E5121F /* LoginHomeController.swift in Sources */,
+				04E951A32D91785C00E5121F /* BaseModel.swift in Sources */,
 				04E951932D8D531800E5121F /* User.swift in Sources */,
+				04E951AD2D928E6200E5121F /* BaseResponse.swift in Sources */,
 				04E951842D8C079900E5121F /* YJHollowPageControl.m in Sources */,
+				04E951982D8EDE1A00E5121F /* SheetListResponse.swift in Sources */,
+				04E951B92D92A14D00E5121F /* SuperToast.swift in Sources */,
 				04C724522D7B068B00641E9C /* ViewFactoryUtil.swift in Sources */,
 				04E951952D8D5A9200E5121F /* ParamUtil.swift in Sources */,
+				04E951AF2D928F1700E5121F /* DetailResponse.swift in Sources */,
 				04C724442D780D4200641E9C /* BaseController.swift in Sources */,
 				04C724482D7810CC00641E9C /* BaseLogicController.swift in Sources */,
 				04E951662D8AACC400E5121F /* MainController.swift in Sources */,
 				04E951822D8C079900E5121F /* YJAbstractDotView.m in Sources */,
 				04E951872D8C079900E5121F /* YJBannerViewCell.m in Sources */,
 				04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */,
+				04E951A72D91797700E5121F /* BaseCommon.swift in Sources */,
+				04E951A12D916BB400E5121F /* ObservableMoyaExtension.swift in Sources */,
 				04E9518A2D8C079900E5121F /* YJBannerView.m in Sources */,
+				04E951A52D91791C00E5121F /* BaseId.swift in Sources */,
 				04E951622D8AA83800E5121F /* DefaultPreferenceUtil.swift in Sources */,
 				04C724542D7B079E00641E9C /* Constant.swift in Sources */,
+				04E951C22D93D2F700E5121F /* TipUtil.swift in Sources */,
 				04C724302D76CE0000641E9C /* SuperDateUtil.swift in Sources */,
 				04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */,
 				04E9518F2D8D515500E5121F /* DefaultService.swift in Sources */,
+				04E9519A2D915FB700E5121F /* PageResponse.swift in Sources */,
+				04E951BB2D93CF2B00E5121F /* ExceptionHandleUtil.swift in Sources */,
 				04E951882D8C079900E5121F /* YJBannerViewCollectionView.m in Sources */,
 				04C724462D780E5200641E9C /* BaseCommonController.swift in Sources */,
 				04C7243C2D7716C600641E9C /* R.generated.swift in Sources */,

@@ -14,6 +14,7 @@ enum DefaultService {
     
     // 歌单列表
     case sheets(size: Int)
+    case sheetDetail(data: String)
     
     // 注册
     case register(data: User)
@@ -35,14 +36,19 @@ extension DefaultService: TargetType {
         case .ads(_):
             return "v1/ads"
             
+//        case .sheets(_):
+//            return "v1/sheets"
         case .sheets:
             return "v1/sheets"
+            
+        case .sheetDetail(let data):
+            return "v1/sheets/\(data)"
             
         case .register(_):
             return "v1/users"
             
-        default:
-            fatalError("DefaultService path is null")
+//        default:
+//            fatalError("DefaultService path is null")
         }
     }
     

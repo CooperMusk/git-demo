@@ -9,7 +9,7 @@ import UIKit
 import DynamicColor
 
 extension UIColor {
-    /// 主色调
+    /// 主色调，这里是红色
     static var primaryColor: UIColor { return DynamicColor(hex: 0xd6271c)}
     
     /// 暗一点 主色调

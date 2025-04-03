@@ -10,7 +10,12 @@ target 'MyCloudMusic' do
 	pod 'DynamicColor'
 	pod 'QMUIKit'
 	# swift 网络请求
-	pod 'Moya'
+	# pod 'Moya'
+	pod 'Moya/RxSwift'
+	pod 'NSObject+Rx'
+	pod 'HandyJSON'
+  # 提示框架
+	pod 'MBProgressHUD'
 
   # Pods for MyCloudMusic
 
