@@ -59,14 +59,12 @@ class SplashController: BaseLogicController {
     
     override func initDatum() {
         super.initDatum()
-//        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
-//            // 已经同意了用户协议
-//            prepareNext()
-//        } else {
-//            showTermsServiceAgreementDialog()
-//        }
-        // test
-        showTermsServiceAgreementDialog()
+        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
+            // 已经同意了用户协议
+            prepareNext()
+        } else {
+            showTermsServiceAgreementDialog()
+        }
     }
     
     func prepareNext() {

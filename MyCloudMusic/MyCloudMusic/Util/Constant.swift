@@ -58,3 +58,9 @@ let SMALL_RADIUS: CGFloat = 5
 let MEDDLE_RADIUS: CGFloat = 10
 let BUTTON_SMALL_RADIUS: CGFloat = 15
 let BUTTON_MEDDLE_RADIUS: CGFloat = 21
+
+/// 网络请求
+let VALUE_NO = -1
+let VALUE0 = 0
+let VALUE10 = 10
+let VALUE12 = 12

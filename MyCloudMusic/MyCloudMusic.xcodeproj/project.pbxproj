@@ -10,6 +10,15 @@
 		0462031EA5009DD07720E68E /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43C495D7945EC2E1AF605BC /* Pods_MyCloudMusicTests.framework */; };
 		046EC7CF2D9E7EDE00AB7943 /* DefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EC7CE2D9E7EDE00AB7943 /* DefaultRepository.swift */; };
 		04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AECAA92D89B8F900B6C467 /* GuideController.swift */; };
+		04B04DE52D9FEE4F005B12D7 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DE42D9FEE4A005B12D7 /* DiscoveryController.swift */; };
+		04B04DE92D9FF088005B12D7 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DE82D9FF088005B12D7 /* VideoController.swift */; };
+		04B04DED2D9FF0D1005B12D7 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DEC2D9FF0D1005B12D7 /* MeController.swift */; };
+		04B04DF12D9FF115005B12D7 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DF02D9FF115005B12D7 /* FeedController.swift */; };
+		04B04DF52D9FF2E0005B12D7 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DF42D9FF2E0005B12D7 /* RoomController.swift */; };
+		04B04DFC2DA23431005B12D7 /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04DFB2DA2342B005B12D7 /* BannerData.swift */; };
+		04B04E012DA241EE005B12D7 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04E002DA241EB005B12D7 /* BaseTableViewCell.swift */; };
+		04B04E032DA24540005B12D7 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04E022DA2453D005B12D7 /* BannerCell.swift */; };
+		04B04E052DA25460005B12D7 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B04E042DA2545D005B12D7 /* ResourceUtil.swift */; };
 		04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF765A2D75874E0034D886 /* AppDelegate.swift */; };
 		04BF76642D75874F0034D886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF76632D75874F0034D886 /* Assets.xcassets */; };
 		04BF76672D75874F0034D886 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04BF76662D75874F0034D886 /* Base */; };
@@ -89,6 +98,15 @@
 /* Begin PBXFileReference section */
 		046EC7CE2D9E7EDE00AB7943 /* DefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepository.swift; sourceTree = "<group>"; };
 		04AECAA92D89B8F900B6C467 /* GuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideController.swift; sourceTree = "<group>"; };
+		04B04DE42D9FEE4A005B12D7 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
+		04B04DE82D9FF088005B12D7 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		04B04DEC2D9FF0D1005B12D7 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		04B04DF02D9FF115005B12D7 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		04B04DF42D9FF2E0005B12D7 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		04B04DFB2DA2342B005B12D7 /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
+		04B04E002DA241EB005B12D7 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		04B04E022DA2453D005B12D7 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		04B04E042DA2545D005B12D7 /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
 		04BF76572D75874E0034D886 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF765A2D75874E0034D886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BF76632D75874F0034D886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +241,120 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		04B04DE22D9FEE0A005B12D7 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DFD2DA24194005B12D7 /* Cell */,
+				04B04DF82DA23408005B12D7 /* Model */,
+				04B04DE32D9FEE19005B12D7 /* Controller */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		04B04DE32D9FEE19005B12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DE42D9FEE4A005B12D7 /* DiscoveryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B04DE62D9FF063005B12D7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DE72D9FF06D005B12D7 /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		04B04DE72D9FF06D005B12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DE82D9FF088005B12D7 /* VideoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B04DEA2D9FF0BE005B12D7 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DEB2D9FF0C5005B12D7 /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		04B04DEB2D9FF0C5005B12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DEC2D9FF0D1005B12D7 /* MeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B04DEE2D9FF101005B12D7 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DEF2D9FF10A005B12D7 /* Controller */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		04B04DEF2D9FF10A005B12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DF02D9FF115005B12D7 /* FeedController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B04DF22D9FF2CD005B12D7 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DF32D9FF2D4005B12D7 /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		04B04DF32D9FF2D4005B12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DF42D9FF2E0005B12D7 /* RoomController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B04DF82DA23408005B12D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DFA2DA23421005B12D7 /* UI */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B04DFA2DA23421005B12D7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04B04DFB2DA2342B005B12D7 /* BannerData.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		04B04DFD2DA24194005B12D7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04B04E022DA2453D005B12D7 /* BannerCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04B04DFF2DA241B9005B12D7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04B04E002DA241EB005B12D7 /* BaseTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		04BF764E2D75874E0034D886 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +380,7 @@
 		04BF76592D75874E0034D886 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				04B04DFF2DA241B9005B12D7 /* Cell */,
 				046EC7CD2D9E7EBF00AB7943 /* Repository */,
 				04E951BC2D93D22F00E5121F /* View */,
 				04E9519F2D916B5E00E5121F /* Extension */,
@@ -291,6 +424,11 @@
 		04BF768A2D75891D0034D886 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				04B04DF22D9FF2CD005B12D7 /* Room */,
+				04B04DEE2D9FF101005B12D7 /* Feed */,
+				04B04DEA2D9FF0BE005B12D7 /* Me */,
+				04B04DE62D9FF063005B12D7 /* Video */,
+				04B04DE22D9FEE0A005B12D7 /* Discovery */,
 				04E951B22D929CA200E5121F /* Ad */,
 				04E9519B2D91610900E5121F /* Sheet */,
 				04E951902D8D52D800E5121F /* User */,
@@ -369,6 +507,7 @@
 		04C724502D7B067600641E9C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				04B04E042DA2545D005B12D7 /* ResourceUtil.swift */,
 				04C724512D7B068B00641E9C /* ViewFactoryUtil.swift */,
 				04C724532D7B079E00641E9C /* Constant.swift */,
 				04E951612D8AA83800E5121F /* DefaultPreferenceUtil.swift */,
@@ -785,9 +924,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -802,9 +945,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -889,7 +1036,10 @@
 				04E951C02D93D2AD00E5121F /* BaseRelativeLayout.swift in Sources */,
 				04E951B52D929CE900E5121F /* Ad.swift in Sources */,
 				04BF768E2D7589C50034D886 /* SplashController.swift in Sources */,
+				04B04E032DA24540005B12D7 /* BannerCell.swift in Sources */,
 				04C7244D2D7AF45A00641E9C /* Test.m in Sources */,
+				04B04DE92D9FF088005B12D7 /* VideoController.swift in Sources */,
+				04B04DE52D9FEE4F005B12D7 /* DiscoveryController.swift in Sources */,
 				04E951C62D93DD5F00E5121F /* ViewExtension.swift in Sources */,
 				04E9518C2D8D487C00E5121F /* Config.swift in Sources */,
 				04E951862D8C079900E5121F /* UIView+YJBannerViewExt.m in Sources */,
@@ -905,6 +1055,7 @@
 				04E951AD2D928E6200E5121F /* BaseResponse.swift in Sources */,
 				04E951842D8C079900E5121F /* YJHollowPageControl.m in Sources */,
 				04E951982D8EDE1A00E5121F /* SheetListResponse.swift in Sources */,
+				04B04DFC2DA23431005B12D7 /* BannerData.swift in Sources */,
 				04E951B92D92A14D00E5121F /* SuperToast.swift in Sources */,
 				04C724522D7B068B00641E9C /* ViewFactoryUtil.swift in Sources */,
 				04E951952D8D5A9200E5121F /* ParamUtil.swift in Sources */,
@@ -913,7 +1064,9 @@
 				04C724482D7810CC00641E9C /* BaseLogicController.swift in Sources */,
 				04E951662D8AACC400E5121F /* MainController.swift in Sources */,
 				04E951822D8C079900E5121F /* YJAbstractDotView.m in Sources */,
+				04B04E012DA241EE005B12D7 /* BaseTableViewCell.swift in Sources */,
 				04E951872D8C079900E5121F /* YJBannerViewCell.m in Sources */,
+				04B04E052DA25460005B12D7 /* ResourceUtil.swift in Sources */,
 				04AECAAA2D89B8F900B6C467 /* GuideController.swift in Sources */,
 				04E951A72D91797700E5121F /* BaseCommon.swift in Sources */,
 				04E951A12D916BB400E5121F /* ObservableMoyaExtension.swift in Sources */,
@@ -925,6 +1078,8 @@
 				04C724302D76CE0000641E9C /* SuperDateUtil.swift in Sources */,
 				04BF765B2D75874E0034D886 /* AppDelegate.swift in Sources */,
 				04E9518F2D8D515500E5121F /* DefaultService.swift in Sources */,
+				04B04DF52D9FF2E0005B12D7 /* RoomController.swift in Sources */,
+				04B04DF12D9FF115005B12D7 /* FeedController.swift in Sources */,
 				04E9519A2D915FB700E5121F /* PageResponse.swift in Sources */,
 				04E951BB2D93CF2B00E5121F /* ExceptionHandleUtil.swift in Sources */,
 				04E951882D8C079900E5121F /* YJBannerViewCollectionView.m in Sources */,
@@ -933,6 +1088,7 @@
 				04C7243F2D77EA5C00641E9C /* SuperUIColorExtensionswift.swift in Sources */,
 				04E951832D8C079900E5121F /* YJAnimatedDotView.m in Sources */,
 				04C7244F2D7AF81B00641E9C /* TermServiceDialogController.swift in Sources */,
+				04B04DED2D9FF0D1005B12D7 /* MeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

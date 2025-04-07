@@ -25,7 +25,7 @@ class DefaultRepository {
     /// 私有构造方法
     private init() {
         // 插件列表
-        var plugins:[PluginType] = []
+        var plugins: [PluginType] = []
         
         // 表示当前是调试模式才打印日志
         if Config.DEBUG {
@@ -85,6 +85,16 @@ class DefaultRepository {
                 .asObservable()
                 .mapString()
                 .mapObject(DetailResponse<Sheet>.self)
+    }
+    
+    /// 轮播图广告
+    func bannerAds() -> Observable<ListResponse<Ad>> {
+        return provider
+                .rx
+                .request(.ads(position: VALUE0))
+                .asObservable()
+                .mapString()
+                .mapObject(ListResponse<Ad>.self)
     }
     
     
