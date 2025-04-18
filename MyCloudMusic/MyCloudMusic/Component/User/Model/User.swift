@@ -7,6 +7,13 @@
 
 import Foundation
 
-class User {
+class User: BaseCommon {
+    
+    /// 昵称
+    var nickname: String!
+
+    /// 头像
+    var icon: String!
+    
     
 }

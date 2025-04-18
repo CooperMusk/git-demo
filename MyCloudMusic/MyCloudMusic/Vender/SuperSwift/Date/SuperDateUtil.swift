@@ -9,6 +9,7 @@ import Foundation
 
 /// 获取当前年
 class SuperDateUtil {
+    
     static func currentYear() -> Int {
         // 获取当前日期
         let date = Date()
@@ -16,4 +17,14 @@ class SuperDateUtil {
         let d = calender.dateComponents([Calendar.Component.year, Calendar.Component.month], from: date)
         return d.year!
     }
+    
+    /// 当前天
+    static func currentDay() -> Int {
+        let date = Date()
+        let calender = Calendar.current
+        let d = calender.dateComponents([Calendar.Component.day], from: date)
+        return d.day!
+    }
+    
+    
 }

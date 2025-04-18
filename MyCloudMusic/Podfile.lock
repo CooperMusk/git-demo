@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.10.2)
   - DynamicColor (5.0.1)
   - HandyJSON (5.0.2)
+  - Kingfisher (8.3.0)
   - MBProgressHUD (1.2.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
@@ -328,16 +329,55 @@ PODS:
   - QMUIKit/QMUIWeakObjectContainer (4.8.0)
   - R.swift (7.8.0)
   - RxSwift (6.9.0)
+  - SDWebImage (5.21.0):
+    - SDWebImage/Core (= 5.21.0)
+  - SDWebImage/Core (5.21.0)
+  - SwifterSwift (7.0.0):
+    - SwifterSwift/AppKit (= 7.0.0)
+    - SwifterSwift/CoreAnimation (= 7.0.0)
+    - SwifterSwift/CoreGraphics (= 7.0.0)
+    - SwifterSwift/CoreLocation (= 7.0.0)
+    - SwifterSwift/CryptoKit (= 7.0.0)
+    - SwifterSwift/Dispatch (= 7.0.0)
+    - SwifterSwift/Foundation (= 7.0.0)
+    - SwifterSwift/HealthKit (= 7.0.0)
+    - SwifterSwift/MapKit (= 7.0.0)
+    - SwifterSwift/SceneKit (= 7.0.0)
+    - SwifterSwift/SpriteKit (= 7.0.0)
+    - SwifterSwift/StoreKit (= 7.0.0)
+    - SwifterSwift/SwiftStdlib (= 7.0.0)
+    - SwifterSwift/UIKit (= 7.0.0)
+    - SwifterSwift/WebKit (= 7.0.0)
+  - SwifterSwift/AppKit (7.0.0)
+  - SwifterSwift/CoreAnimation (7.0.0)
+  - SwifterSwift/CoreGraphics (7.0.0)
+  - SwifterSwift/CoreLocation (7.0.0)
+  - SwifterSwift/CryptoKit (7.0.0)
+  - SwifterSwift/Dispatch (7.0.0)
+  - SwifterSwift/Foundation (7.0.0)
+  - SwifterSwift/HealthKit (7.0.0)
+  - SwifterSwift/MapKit (7.0.0)
+  - SwifterSwift/SceneKit (7.0.0)
+  - SwifterSwift/SpriteKit (7.0.0)
+  - SwifterSwift/StoreKit (7.0.0)
+  - SwifterSwift/SwiftStdlib (7.0.0)
+  - SwifterSwift/UIKit (7.0.0)
+  - SwifterSwift/WebKit (7.0.0)
+  - SwiftEventBus (5.0.0)
   - TangramKit (1.4.2)
 
 DEPENDENCIES:
   - DynamicColor
   - HandyJSON
+  - Kingfisher
   - MBProgressHUD
   - Moya/RxSwift
   - "NSObject+Rx"
   - QMUIKit
   - R.swift
+  - SDWebImage
+  - SwifterSwift
+  - SwiftEventBus
   - TangramKit
 
 SPEC REPOS:
@@ -345,26 +385,34 @@ SPEC REPOS:
     - Alamofire
     - DynamicColor
     - HandyJSON
+    - Kingfisher
     - MBProgressHUD
     - Moya
     - "NSObject+Rx"
     - QMUIKit
     - R.swift
     - RxSwift
+    - SDWebImage
+    - SwifterSwift
+    - SwiftEventBus
     - TangramKit
 
 SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   DynamicColor: d049834ef86d8ecf150b0ca1ebe54ee733a0ec22
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: 00841bd9d22a65bb3731f41a1f7715e63788a7aa
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
   R.swift: f573269ca45b2ab066c082e363dd4c2b297b0d71
   RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
+  SwifterSwift: e9caf990fc72e835432280755d1f4c43f2a483d5
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: 0f3b13c982bfa96eaa7c0e7903b67664b85c56ac
+PODFILE CHECKSUM: 18a0f481ef9f47811aac75ab81b66f9e435ed253
 
 COCOAPODS: 1.16.2

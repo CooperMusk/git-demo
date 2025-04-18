@@ -29,11 +29,18 @@ class BaseLogicController: BaseCommonController {
     /// TableView，一行显示一列
     var tableView: UITableView!
     
+    /// 页面加载时，从网络请求的数据都存储在 datum 中
     lazy var datum: [Any] = {
         var result: [Any] = []
         return result
     }()
     
+    
+    override func initViews() {
+        super.initViews()
+        
+        setBackgroundColor(.colorBackground)
+    }
     
     /// 初始化 RelativeLayout 容器，四边都在安全区内
     func initRelativeLayoutSafeArea() {
@@ -168,17 +175,13 @@ class BaseLogicController: BaseCommonController {
         
     }
     
-    override func initViews() {
-        super.initViews()
-        setBackgroundColor(.colorBackground)
-    }
-    
     
 }
 
 
 // TableView 数据源和代理
 extension BaseLogicController: UITableViewDataSource, UITableViewDelegate {
+    
     /// 这个方法返回 datum 列表的 count ，如果返回 3 ，就会调用 3 次下面的方法。
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datum.count

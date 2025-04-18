@@ -10,3 +10,6 @@
 
 // 提示器
 #import <MBProgressHUD/MBProgressHUD.h>
+
+// 图片加载框架
+#import "SDWebImage/UIImageView+WebCache.h"

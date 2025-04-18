@@ -16,6 +16,15 @@ target 'MyCloudMusic' do
 	pod 'HandyJSON'
   # 提示框架
 	pod 'MBProgressHUD'
+  # OC 图片加载缓存
+	pod 'SDWebImage'
+  # Swift 图片加载缓存
+	pod 'Kingfisher'
+  # Swift 字符串扩展
+	pod 'SwifterSwift'
+  # Swift 发布订阅
+	pod 'SwiftEventBus'
+
 
   # Pods for MyCloudMusic
 

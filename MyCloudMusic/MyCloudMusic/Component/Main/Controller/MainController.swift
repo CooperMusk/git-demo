@@ -8,11 +8,14 @@
 import UIKit
 
 class MainController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 选中高亮颜色
+        // 用于设置选中状态下的图标和文字的颜色
         tabBar.tintColor = .primaryColor
+        
+        // TabBar 的背景是半透明
         tabBar.isTranslucent = true
         
         // 添加子控制器

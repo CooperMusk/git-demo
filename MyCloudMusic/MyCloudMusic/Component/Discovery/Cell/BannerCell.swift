@@ -12,6 +12,8 @@ class BannerCell: BaseTableViewCell {
     var bannerView: YJBannerView!
     var data: BannerData!
     var datum: [String] = []
+    
+    /// 定义一个闭包，用于处理广告点击事件
     var bannerClick: ((Ad) -> Void)!
     
     
@@ -24,8 +26,11 @@ class BannerCell: BaseTableViewCell {
         // 轮播图
         bannerView = YJBannerView()
         bannerView.backgroundColor = .clear
+        
+        // 数据源和代理
         bannerView.dataSource = self
         bannerView.delegate = self
+        
         bannerView.tg_width.equal(.fill)
         
         // SCREEN_WIDTH 是 QMUI 提供的宏
@@ -88,7 +93,7 @@ extension BannerCell: YJBannerViewDataSource, YJBannerViewDelegate {
     /// 复写该方法的目的是
     /// 设置图片的缩放模式
     func bannerView(_ bannerView: YJBannerView!, customCell: UICollectionViewCell!, index: Int) -> UICollectionViewCell! {
-        // 将 cell 类型转为 YJBannerViewCell
+        // 将 Cell 类型转为 YJBannerViewCell
         let cell = customCell as! YJBannerViewCell
         
         // 设置图片的缩放模式为
@@ -109,4 +114,3 @@ extension BannerCell: YJBannerViewDataSource, YJBannerViewDelegate {
     
     
 }
-

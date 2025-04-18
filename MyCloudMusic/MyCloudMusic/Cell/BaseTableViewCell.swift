@@ -11,16 +11,17 @@ import UIKit
 import TangramKit
 
 class BaseTableViewCell: UITableViewCell {
-    // 对于需要动态评估高度的 UITableViewCell 来说可以把布局视图暴露出来。用于高度评估和边界线处理。以及事件处理的设置。
+    
+    /// 对于需要动态评估高度的 UITableViewCell 来说可以把布局视图暴露出来。用于高度评估和边界线处理。以及事件处理的设置。
     var container: TGBaseLayout!
     
-    // TableView 动态创建 Cell 的时候，就会调用这个方法。
+    /// TableView 动态创建 Cell 的时候，就会调用这个方法。
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         innerInit()
     }
     
-    // 使用可视化编程的时候就会调用这个，使用纯代码调用上面的 init 方法。
+    /// 使用可视化编程的时候就会调用这个，使用纯代码调用上面的 init 方法。
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         innerInit()
@@ -32,13 +33,13 @@ class BaseTableViewCell: UITableViewCell {
         initListeners()
     }
     
-    /// 找控件
+    /// 初始化控件
     func initViews() {
         // 背景透明
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         
-        // 去掉默认的选中颜色
+        // 禁用单元格的选中高亮效果
         selectionStyle = .none
         
         // 根容器
