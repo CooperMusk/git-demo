@@ -24,6 +24,8 @@ target 'MyCloudMusic' do
 	pod 'SwifterSwift'
   # Swift 发布订阅
 	pod 'SwiftEventBus'
+	# OC 下拉刷新
+	pod 'MJRefresh'
 
 
   # Pods for MyCloudMusic

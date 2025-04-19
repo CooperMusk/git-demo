@@ -18,6 +18,19 @@ class DiscoveryController: BaseLogicController {
         // 初始化 TableView 结构
         initTableViewSafeArea()
         
+        // 下拉刷新
+        let header = MJRefreshNormalHeader {
+            [weak self] in
+            self?.loadData()
+        }
+
+        // 隐藏标题
+        header.stateLabel?.isHidden = true
+
+        // 隐藏时间
+        header.lastUpdatedTimeLabel?.isHidden = true
+        tableView.mj_header = header
+        
         // 注册轮播图 Cell
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constant.CELL)
         
@@ -34,7 +47,9 @@ class DiscoveryController: BaseLogicController {
     override func initDatum() {
         super.initDatum()
         
-        loadData()
+        // 这里进入界面会通过 startRefresh 方法来调用 loadData 方法
+//        loadData()
+        startRefresh()
     }
     
     override func initListeners() {
@@ -82,6 +97,8 @@ class DiscoveryController: BaseLogicController {
     func loadSongData() {
         DefaultRepository.shared.songs()
             .subscribeSuccess {[weak self] data in
+                // 结束下拉刷新
+                self?.endRefresh()
                 
                 // 添加单曲数据
                 self?.datum.append(SongData(data.data!.data!))
@@ -112,6 +129,16 @@ class DiscoveryController: BaseLogicController {
             return .song
         }
         return .banner
+    }
+    
+    /// 进入界面后自动下拉刷新，会调用 loadData 方法
+    func startRefresh() {
+        tableView.mj_header!.beginRefreshing()
+    }
+    
+    /// 结束下拉刷新
+    func endRefresh()  {
+        tableView.mj_header!.endRefreshing()
     }
     
     
